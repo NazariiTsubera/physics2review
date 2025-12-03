@@ -2,11 +2,11 @@
 
 :root {
   font-family: 'Space Grotesk', 'Commissioner', sans-serif;
-  color: #e8f0ff;
-  background: radial-gradient(circle at 20% 20%, rgba(71, 169, 255, 0.14), transparent 32%),
-    radial-gradient(circle at 80% 0%, rgba(255, 136, 103, 0.15), transparent 25%),
-    #0c1222;
-  line-height: 1.6;
+  color: #e9edf6;
+  background: radial-gradient(circle at 18% 16%, rgba(86, 155, 255, 0.12), transparent 30%),
+    radial-gradient(circle at 78% 6%, rgba(255, 170, 130, 0.12), transparent 30%),
+    linear-gradient(180deg, #0a0f1b 0%, #0c1324 100%);
+  line-height: 1.72;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #9be7ff;
+  color: #6bd3ff;
 }
 
 body {

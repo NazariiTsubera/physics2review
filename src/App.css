@@ -1,20 +1,20 @@
 .app-shell {
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 24px 24px 80px;
+  padding: 36px 22px 110px;
 }
 
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 14px 22px;
+  border: 1px solid #1f2a3a;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(12px);
+  background: rgba(17, 24, 39, 0.9);
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.35);
   position: sticky;
-  top: 16px;
+  top: 12px;
   z-index: 10;
 }
 
@@ -36,14 +36,14 @@
   font-size: 12px;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid #253144;
   background: rgba(255, 255, 255, 0.06);
-  color: inherit;
+  color: #e9edf6;
   transition: transform 0.15s ease, border-color 0.2s ease;
 }
 
 .byline:hover {
-  border-color: rgba(123, 227, 255, 0.8);
+  border-color: #3aa7ff;
   transform: translateY(-1px);
 }
 
@@ -60,31 +60,31 @@
 }
 
 .topnav a:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: #9be7ff;
+  background: rgba(255, 255, 255, 0.05);
+  color: #7ee6ff;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 36px;
   padding-top: 32px;
 }
 
 .intro-card {
-  padding: 28px;
+  padding: 32px;
   border-radius: 24px;
-  background: linear-gradient(120deg, rgba(54, 121, 255, 0.35), rgba(15, 196, 180, 0.25));
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #f3f7ff;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(120deg, rgba(20, 30, 50, 0.9), rgba(15, 26, 45, 0.92));
+  border: 1px solid #1f2a3a;
+  color: #e9edf6;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
 }
 
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 12px;
-  opacity: 0.8;
+  opacity: 0.65;
   margin: 0 0 8px;
 }
 
@@ -105,7 +105,7 @@ h3 {
 .lede {
   max-width: 720px;
   font-size: 18px;
-  opacity: 0.92;
+  opacity: 0.85;
   margin: 0 0 18px;
 }
 
@@ -129,19 +129,20 @@ h3 {
 }
 
 .cta.primary {
-  background: linear-gradient(135deg, #7be3ff, #29f0b4);
-  color: #07203d;
-  box-shadow: 0 10px 25px rgba(68, 255, 196, 0.35);
+  background: linear-gradient(135deg, #6be3ff, #2dd7b8);
+  color: #031423;
+  box-shadow: 0 12px 26px rgba(109, 227, 255, 0.3);
 }
 
 .cta.primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(68, 255, 196, 0.5);
+  box-shadow: 0 14px 32px rgba(109, 227, 255, 0.42);
 }
 
 .cta.ghost {
-  background: rgba(255, 255, 255, 0.04);
-  color: #dbe9ff;
+  background: rgba(255, 255, 255, 0.05);
+  color: #e9edf6;
+  border-color: #253144;
 }
 
 .pill-row {
@@ -155,10 +156,10 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 12px;
+  padding: 9px 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid #253144;
   font-size: 13px;
 }
 
@@ -172,14 +173,14 @@ h3 {
 }
 
 .how-to-card {
-  padding: 22px;
+  padding: 24px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(13, 20, 35, 0.8);
+  border: 1px solid #1f2a3a;
+  background: rgba(17, 24, 39, 0.9);
 }
 
 .steps {
-  margin: 0 0 14px 18px;
+  margin: 0 0 16px 18px;
   padding: 0;
   display: grid;
   gap: 6px;
@@ -216,25 +217,25 @@ h3 {
 .topic-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 14px;
-  margin-top: 16px;
+  gap: 18px;
+  margin-top: 20px;
 }
 
 .topic-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 18px;
+  padding: 20px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #121b2c;
+  border: 1px solid #1f2a3a;
   transition: transform 0.15s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
 .topic-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(123, 227, 255, 0.8);
-  background: rgba(255, 255, 255, 0.06);
+  border-color: #3aa7ff;
+  background: #0f1626;
 }
 
 .card-blurb {
@@ -251,20 +252,20 @@ h3 {
 .chip {
   padding: 6px 10px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.07);
   font-size: 13px;
 }
 
 .more {
   font-size: 13px;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .topic-page {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 26px;
 }
 
 .breadcrumb {
@@ -276,9 +277,9 @@ h3 {
 }
 
 .icon-btn {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: inherit;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #253144;
+  color: #e9edf6;
   padding: 6px 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -288,15 +289,15 @@ h3 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 14px;
-  padding: 18px;
+  padding: 20px;
   border-radius: 20px;
-  background: linear-gradient(120deg, rgba(86, 180, 255, 0.2), rgba(31, 214, 168, 0.25));
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(120deg, rgba(26, 37, 62, 0.9), rgba(19, 43, 54, 0.85));
+  border: 1px solid #1f2a3a;
 }
 
 .side-panel {
-  background: rgba(4, 12, 24, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(14, 22, 34, 0.9);
+  border: 1px solid #253144;
   border-radius: 14px;
   padding: 12px;
 }
@@ -309,10 +310,10 @@ h3 {
 }
 
 .panel {
-  padding: 18px;
+  padding: 22px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0f1626;
+  border: 1px solid #1f2a3a;
 }
 
 .pill-stack {
@@ -332,10 +333,10 @@ h3 {
 }
 
 .equation-card {
-  padding: 12px;
+  padding: 14px;
   border-radius: 12px;
-  background: rgba(7, 13, 26, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #121b2c;
+  border: 1px solid #253144;
 }
 
 .eq-name {
@@ -361,10 +362,10 @@ h3 {
 .walkthrough {
   display: grid;
   gap: 10px;
-  background: rgba(8, 18, 30, 0.7);
+  background: #121b2c;
   border-radius: 14px;
   padding: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid #253144;
 }
 
 .walkthrough-question {
@@ -379,7 +380,7 @@ h3 {
 }
 
 .interactive {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(56, 208, 175, 0.08));
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(16, 36, 46, 0.9));
 }
 
 .flashcard-grid {
@@ -392,42 +393,71 @@ h3 {
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
-  background: rgba(4, 12, 24, 0.7);
+  background: #0f1626;
+  border-color: #253144;
   color: inherit;
-  padding: 14px;
   cursor: pointer;
-  min-height: 120px;
+  min-height: 140px;
   text-align: left;
   transition: transform 0.2s ease, border-color 0.2s ease;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .flashcard:hover {
   transform: translateY(-2px);
-  border-color: rgba(155, 231, 255, 0.8);
+  border-color: #3aa7ff;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'face';
+  transition: opacity 0.25s ease;
 }
 
 .flashcard-face {
-  transition: opacity 0.2s ease;
+  grid-area: face;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  display: block;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: normal;
+  background: #0f1626;
+  border-radius: 14px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  overflow-wrap: anywhere;
 }
 
-.flashcard .back {
-  opacity: 0.75;
+.flashcard .front {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .flashcard.flipped .front {
-  opacity: 0.2;
+  opacity: 0;
+}
+
+.flashcard .back {
+  opacity: 0;
+  font-weight: 600;
 }
 
 .flashcard.flipped .back {
   opacity: 1;
-  font-weight: 600;
 }
 
 .quiz-card {
   padding: 14px;
   border-radius: 14px;
-  background: rgba(7, 13, 26, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0f1626;
+  border: 1px solid #253144;
 }
 
 .quiz-question {
@@ -491,6 +521,152 @@ h3 {
   flex-wrap: wrap;
 }
 
+.sim-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+}
+
+.field-card,
+.control-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field-wrapper {
+  border: 1px solid #1f2a3a;
+  border-radius: 14px;
+  background: #0c1324;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.field-canvas {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  touch-action: none;
+  cursor: grab;
+}
+
+.field-canvas.dragging {
+  cursor: grabbing;
+}
+
+.field-bg {
+  fill: #0c1324;
+}
+
+.grid {
+  stroke: #1f2a3a;
+  stroke-width: 0.02;
+}
+
+.grid.axis {
+  stroke: #294162;
+  stroke-width: 0.03;
+}
+
+
+.field-arrow line,
+.field-arrow polyline {
+  stroke-width: 0.02;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.field-arrow.pos-field line,
+.field-arrow.pos-field path {
+  stroke: #ff9a6a;
+  fill: #ff9a6a;
+}
+
+.field-arrow.neg-field line,
+.field-arrow.neg-field path {
+  stroke: #6bd3ff;
+  fill: #6bd3ff;
+}
+
+.field-arrow {
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.charge-dot .charge {
+  fill: #0c1324;
+  stroke-width: 0.08;
+}
+
+.charge-dot .charge.pos {
+  stroke: #ff9a6a;
+}
+
+.charge-dot .charge.neg {
+  stroke: #6bd3ff;
+}
+
+.charge-label {
+  fill: #e9edf6;
+  font-size: 0.35px;
+  dominant-baseline: middle;
+}
+
+.control-card {
+  background: #0f1626;
+  border: 1px solid #1f2a3a;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.charge-form {
+  display: grid;
+  gap: 10px;
+}
+
+.charge-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #cfd6e5;
+}
+
+.charge-form input {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #1f2a3a;
+  background: #0c1324;
+  color: #e9edf6;
+}
+
+.charge-list {
+  display: grid;
+  gap: 8px;
+}
+
+.charge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.charge-pill {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 1px solid #1f2a3a;
+  background: #121b2c;
+}
+
+.charge-pill.pos {
+  border-color: #3aa7ff;
+}
+
+.charge-pill.neg {
+  border-color: #ff9a6a;
+}
+
 .footer {
   margin-top: 32px;
   padding: 14px 0;
@@ -521,6 +697,10 @@ h3 {
   .topbar {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .sim-layout {
+    grid-template-columns: 1fr;
   }
 }
 
